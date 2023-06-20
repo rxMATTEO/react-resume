@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import './index.sass';
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
+import Main from './components/main/Main';
 
 function App() {
   const [count, setCount] = useState(0);
   return (
     <>
-      <h1>This is example text just to make sure everything works fine</h1>
-      <Sidebar/>
+      <Sidebar />
+      <Main />
     </>
   );
 }

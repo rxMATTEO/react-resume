@@ -3,17 +3,34 @@
 $width: 250px
 
 .sidebar-left
-  background-color: $gray
+  background-color: black
   position: fixed
   top: 0
   bottom: 0
   padding: 5px
   width: $width
 
-.top
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-content: center
-  color: $light-gray
-  padding: 30% 0
+  .top
+    display: flex
+    flex-direction: column
+    color: $light-gray
+    padding: 30% 0
+    flex-wrap: wrap
+    align-items: center
+
+    .image
+      display: block
+      $radius: 90px
+      text-align: center
+      height: $radius
+      width: $radius
+      border-radius: $radius * 2
+      overflow: hidden
+      border: white 5px solid
+      img
+        width: $radius
+        height: $radius
+
+    .image-label
+      margin-top: 10px
+      text-align: center

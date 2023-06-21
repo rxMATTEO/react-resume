@@ -1,4 +1,5 @@
 import './sidebar.sass';
+import NavLinks from "./NavLinks";
 
 
 function Sidebar() {
@@ -9,6 +10,7 @@ function Sidebar() {
           <div className="image"><img src="./static/about-me.jpg" alt="avatar"/></div>
           <span className="image-label">@volodin-artem</span>
         </div>
+        <NavLinks />
       </nav>
     </>
   );

@@ -1,6 +1,5 @@
-import './sidebar.sass';
 import NavLinks from "./NavLinks";
-
+import SocialLinks from "../social-links/SocialLinks";
 
 function Sidebar() {
   return (
@@ -11,6 +10,7 @@ function Sidebar() {
           <span className="image-label">@volodin-artem</span>
         </div>
         <NavLinks />
+        <SocialLinks />
       </nav>
     </>
   );

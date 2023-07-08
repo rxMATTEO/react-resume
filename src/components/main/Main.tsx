@@ -1,6 +1,6 @@
-import "./main.sass";
-import Home from "../home/Home";
-import Welcome from "../welcome/Welcome";
+import './main.sass';
+import Home from '../home/Home.tsx';
+import Welcome from '../welcome/Welcome.tsx';
 
 function Main() {
   return (

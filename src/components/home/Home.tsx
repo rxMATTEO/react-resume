@@ -1,5 +1,6 @@
-import "./home.sass";
-import Button from "../inputs/Button";
+import './home.sass';
+import Button from '../inputs/Button.tsx';
+
 function Home() {
   return (
     <div className="home">

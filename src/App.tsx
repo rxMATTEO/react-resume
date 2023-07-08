@@ -1,5 +1,5 @@
 import './index.sass';
-import Sidebar from "./components/sidebar/Sidebar";
+import Sidebar from './components/sidebar/Sidebar';
 import Main from './components/main/Main';
 
 function App() {
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

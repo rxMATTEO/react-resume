@@ -2,8 +2,9 @@ import './welcome.sass';
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      Welcome block
+    <div className="flex flex-row mx-auto">
+      <div className="image grow">a</div>
+      <div className="about">b</div>
     </div>
   );
 }

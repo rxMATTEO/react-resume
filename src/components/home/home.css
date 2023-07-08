@@ -20,6 +20,13 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.new {
+  color: black;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .home {
   height: 100vh;
   display: flex;

@@ -1,4 +1,5 @@
 import './social-links.sass';
+
 function SocialLinks() {
   return (
     <div className="soc-links">

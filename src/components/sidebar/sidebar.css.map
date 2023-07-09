@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sidebar.sass","../colors.sass"],"names":[],"mappings":"AAIA;EACE,kBCLK;EDML;EACA;EACA;EACA;EACA,OARM;;;AAUR;EACE;EACA;EACA;EACA;EACA,OCfW;EDgBX","file":"sidebar.css"}
+{"version":3,"sourceRoot":"","sources":["sidebar.sass","../colors.sass"],"names":[],"mappings":"AAIAEACE,kBCLKEDMLEACAEACAEACAEACA,OARMAAUREACEEACAEACAEACAEACA,OCfWEDgBX","file":"sidebar.css"}

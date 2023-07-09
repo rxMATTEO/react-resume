@@ -1,45 +1,45 @@
 * {
-  box-sizing: border-box;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  box-sizing: border-box
+  margin-block-start: 0
+  margin-block-end: 0
+  margin-inline-start: 0
+  margin-inline-end: 0
+  text-decoration: none
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  vertical-align: baseline
 }
 
 html, body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base
+@tailwind components
+@tailwind utilities
 .home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
 }
 .home h1 {
-  color: white;
-  font-size: 65px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  color: white
+  font-size: 65px
+  font-weight: 700
+  margin-bottom: 20px
 }
 .home h6 {
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  color: white
+  font-size: 20px
+  font-weight: 500
+  margin-bottom: 20px
 }
 
 /*# sourceMappingURL=home.css.map */

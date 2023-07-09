@@ -5,7 +5,6 @@ import EducationAndSkills from './EducationAndSkills.tsx';
 import Experience from './Experience.tsx';
 import Stack from './Stack.tsx';
 import Carousel from './Carousel.tsx';
-import CardWithImage from '../inputs/CardWithImage.tsx';
 
 function Welcome() {
   return (

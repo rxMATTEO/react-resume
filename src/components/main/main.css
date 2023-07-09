@@ -1,45 +1,45 @@
 .sidebar-left {
-  background-color: black
-  position: fixed
-  top: 0
-  bottom: 0
-  padding: 5px
-  width: 250px
-  display: flex
-  height: 100%
-  flex-direction: column
+  background-color: #0b0b13;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 5px;
+  width: 250px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 .sidebar-left .top {
-  display: flex
-  flex-direction: column
-  color: rgba(255, 255, 255, 0.8)
-  padding: 30% 0
-  flex-wrap: wrap
-  align-items: center
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 30% 0;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .sidebar-left .top .image {
-  display: block
-  text-align: center
-  height: 90px
-  width: 90px
-  border-radius: 180px
-  overflow: hidden
-  border: white 5px solid
+  display: block;
+  text-align: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 180px;
+  overflow: hidden;
+  border: white 5px solid;
 }
 .sidebar-left .top .image img {
-  width: 90px
-  height: 90px
+  width: 90px;
+  height: 90px;
 }
 .sidebar-left .top .image-label {
-  margin-top: 10px
-  text-align: center
+  margin-top: 10px;
+  text-align: center;
 }
 
 .main {
-  margin-left: 250px
-  padding-left: 20px
-  color: rgba(255, 255, 255, 0.8)
-  background-color: #343a40
+  margin-left: 250px;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #343a40;
 }
 
 /*# sourceMappingURL=main.css.map */

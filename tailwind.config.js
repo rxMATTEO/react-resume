@@ -9,6 +9,8 @@ module.exports = {
     },
     colors: {
       lightgrey: 'rgba(255, 255, 255, 0.8)',
+      purple: '#998ADB',
+      gray: '#0b0b13',
     },
   },
   plugins: [],

@@ -9,11 +9,11 @@ type propsTypes = {
 function CardWithLabel(props: propsTypes) {
   const { header, label, mainText } = props;
   return (
-    <div className="bg-gray w-2/5 pt-3 pb-5 pr-5">
-      <span className="text-left align-top bg-purple p-0.5 text-sm card relative -ml-1">{label}</span>
+    <div className="bg-gray pt-3 pb-5 pr-5 card">
+      <span className="text-left align-top bg-purple p-0.5 text-sm label relative -ml-1">{label}</span>
       <div className="ml-5 mt-3">
         <p className="text-white">{header}</p>
-        <p>{mainText}</p>
+        <p className="mt-2">{mainText}</p>
       </div>
     </div>
   );

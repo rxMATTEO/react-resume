@@ -18,5 +18,5 @@ function CardWithLabel(props: propsTypes) {
     </div>
   );
 }
-
+// todo cool animation on hover mb?
 export default CardWithLabel;

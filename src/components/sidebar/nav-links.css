@@ -1,0 +1,16 @@
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu .nav-link {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 30px;
+  transition: all 0.8s ease;
+}
+.nav-menu .nav-link:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=nav-links.css.map */

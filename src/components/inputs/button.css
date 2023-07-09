@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  background-color: #998ADB;
+  border: none;
+  color: white;
+  display: inline-block;
+  padding: 15px 25px;
+  transition: ease all 0.35s;
+  box-shadow: white 5px 5px;
+}
+.button:hover {
+  background-color: white;
+  color: #998ADB;
+  box-shadow: #998ADB 5px 5px;
+}
+
+/*# sourceMappingURL=button.css.map */

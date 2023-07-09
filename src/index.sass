@@ -1,3 +1,18 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@font-face
+  font-family: 'NTSomic'
+  font-weight: normal
+  src: url("../public/static/fonts/NTSomic-Medium.woff2")
+
+
+@font-face
+  font-family: 'NTSomic'
+  src: url('../public/static/fonts/NTSomic-Bold.woff2')
+  font-weight: bold
+
 *
   box-sizing: border-box
   margin-block-start: 0
@@ -30,6 +45,8 @@ html, body
   font-weight: 700
   margin-bottom: 20px
 
-@tailwind base
-@tailwind components
-@tailwind utilities
+h1
+  font-size: 1.75rem
+  color: white
+  font-weight: 500
+  font-family: NTSomic, cursive

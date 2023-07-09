@@ -3,6 +3,7 @@ import Divider from '../inputs/Divider.tsx';
 import AboutMe from './AboutMe.tsx';
 import EducationAndSkills from './EducationAndSkills.tsx';
 import Experience from './Experience.tsx';
+import Stack from './Stack.tsx';
 
 function Welcome() {
   return (
@@ -12,6 +13,8 @@ function Welcome() {
       <EducationAndSkills />
       <Divider />
       <Experience />
+      <Divider />
+      <Stack />
     </div>
   );
 }

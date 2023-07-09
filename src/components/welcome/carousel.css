@@ -1,0 +1,10 @@
+.swiper-bullet {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.swiper-bullet.active {
+  background-color: white;
+}
+
+/*# sourceMappingURL=carousel.css.map */

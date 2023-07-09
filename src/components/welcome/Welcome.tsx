@@ -15,6 +15,7 @@ function Welcome() {
       <Experience />
       <Divider />
       <Stack />
+      <Divider />
     </div>
   );
 }

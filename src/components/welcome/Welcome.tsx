@@ -8,7 +8,7 @@ import Carousel from './Carousel.tsx';
 
 function Welcome() {
   return (
-    <div className="w-2/3 mx-auto">
+    <div className="sm:w-2/3 pr-5 mx-auto">
       <AboutMe />
       <Divider />
       <EducationAndSkills />

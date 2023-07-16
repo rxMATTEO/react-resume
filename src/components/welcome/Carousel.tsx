@@ -31,14 +31,14 @@ function Carousel(props: propTypes) {
   }, [selectedIndex]);
   return (
     <div className="overflow-hidden">
-      {/* <div className="overflow-hidden relative" style={{ width: `${displayPerPage * offsetPerStep}px` }}> */}
-      {/*  <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${(items.length * offsetPerStep) + (items.length * 100)}px`, left: -offset }}> */}
-      {/*    {items} */}
-      {/*  </div> */}
-      {/* </div> */}
-      {/* <div className="mx-auto flex flex-row place-content-center mt-5"> */}
-      {/*  {bullets} */}
-      {/* </div> */}
+      <div className="overflow-hidden mx-auto relative" style={{ width: `${offsetPerStep + (items.length * 5)}px` }}>
+        <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${(items.length * offsetPerStep) + (items.length * 5)}px`, left: -offset }}>
+          {items}
+        </div>
+      </div>
+      <div className="mx-auto flex flex-row place-content-center mt-5">
+        {bullets}
+      </div>
     </div>
   );
 }

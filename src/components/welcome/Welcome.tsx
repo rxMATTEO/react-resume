@@ -26,7 +26,7 @@ function Welcome() {
           <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'blue' }} />,
           <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'orange' }} />,
         ]}
-        offsetPerStep={300}
+        offsetPerStep={605}
         displayPerPage={2}
       />
     </div>

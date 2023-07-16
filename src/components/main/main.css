@@ -1,15 +1,16 @@
-.sidebar-left {
+.wrapper {
+  width: 100%;
+}
+.wrapper .sidebar-left {
   background-color: #0b0b13;
   position: fixed;
   top: 0;
   bottom: 0;
-  padding: 5px;
-  width: 250px;
   display: flex;
   height: 100%;
   flex-direction: column;
 }
-.sidebar-left .top {
+.wrapper .sidebar-left .top {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.8);
@@ -17,7 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.sidebar-left .top .image {
+.wrapper .sidebar-left .top .image {
   display: block;
   text-align: center;
   height: 90px;
@@ -26,17 +27,16 @@
   overflow: hidden;
   border: white 5px solid;
 }
-.sidebar-left .top .image img {
+.wrapper .sidebar-left .top .image img {
   width: 90px;
   height: 90px;
 }
-.sidebar-left .top .image-label {
+.wrapper .sidebar-left .top .image-label {
   margin-top: 10px;
   text-align: center;
 }
 
 .main {
-  margin-left: 250px;
   padding-left: 20px;
   color: rgba(255, 255, 255, 0.8);
   background-color: #343a40;

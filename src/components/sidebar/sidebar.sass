@@ -1,38 +1,36 @@
 @import "../../colors"
 
-$width: 250px
-
-.sidebar-left
-  background-color: $darkgray
-  position: fixed
-  top: 0
-  bottom: 0
-  padding: 5px
-  width: $width
-  display: flex
-  height: 100%
-  flex-direction: column
-  .top
+.wrapper
+  width: 100%
+  .sidebar-left
+    background-color: $darkgray
+    position: fixed
+    top: 0
+    bottom: 0
     display: flex
+    height: 100%
     flex-direction: column
-    color: $light-gray
-    padding: 30% 0
-    flex-wrap: wrap
-    align-items: center
+    .top
+      display: flex
+      flex-direction: column
+      color: $light-gray
+      padding: 30% 0
+      flex-wrap: wrap
+      align-items: center
 
-    .image
-      display: block
-      $radius: 90px
-      text-align: center
-      height: $radius
-      width: $radius
-      border-radius: $radius * 2
-      overflow: hidden
-      border: white 5px solid
-      img
-        width: $radius
+      .image
+        display: block
+        $radius: 90px
+        text-align: center
         height: $radius
+        width: $radius
+        border-radius: $radius * 2
+        overflow: hidden
+        border: white 5px solid
+        img
+          width: $radius
+          height: $radius
 
-    .image-label
-      margin-top: 10px
-      text-align: center
+      .image-label
+        margin-top: 10px
+        text-align: center

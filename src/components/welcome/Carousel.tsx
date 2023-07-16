@@ -12,6 +12,7 @@ type propTypes = {
 // TODO Разобраься с React.fc. Нужно чтобы SwiperBullet был отдельным типом чтобы я не мог в массив засунуть любой JSX элемент
 // разобраться с тем что не подсвечиваюся ts ошибки веронятно tsconfig
 // почитать доки по ts опять и react ts
+// fonts не применяются idk
 function Carousel(props: propTypes) {
   const { items, offsetPerStep, displayPerPage } = props;
   const [offset, setOffset] = useState(0);
@@ -29,15 +30,15 @@ function Carousel(props: propTypes) {
     setBullets(newBullets);
   }, [selectedIndex]);
   return (
-    <div>
-      <div className="overflow-hidden" style={{ width: `${displayPerPage * offsetPerStep}px` }}>
-        <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: '9999999px', left: -offset }}>
-          {items}
-        </div>
-      </div>
-      <div className="mx-auto flex flex-row place-content-center mt-5">
-        {bullets}
-      </div>
+    <div className="overflow-hidden">
+      {/* <div className="overflow-hidden relative" style={{ width: `${displayPerPage * offsetPerStep}px` }}> */}
+      {/*  <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${(items.length * offsetPerStep) + (items.length * 100)}px`, left: -offset }}> */}
+      {/*    {items} */}
+      {/*  </div> */}
+      {/* </div> */}
+      {/* <div className="mx-auto flex flex-row place-content-center mt-5"> */}
+      {/*  {bullets} */}
+      {/* </div> */}
     </div>
   );
 }

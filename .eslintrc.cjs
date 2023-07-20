@@ -13,6 +13,8 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     'react-in-jsx-scope': 'off',
     'react/react-in-jsx-scope': 'off',
+    'no-plusplus': 'off',
     'react/jsx-filename-extension': 'off',
+    'max-len': 'off',
   },
 }

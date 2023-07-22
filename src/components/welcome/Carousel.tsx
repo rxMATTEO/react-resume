@@ -31,8 +31,8 @@ function Carousel(props: propTypes) {
   }, [selectedIndex]);
   return (
     <div className="overflow-hidden">
-      <div className="overflow-hidden mx-auto relative" style={{ width: `${offsetPerStep + (items.length * 5)}px` }}>
-        <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${(items.length * offsetPerStep) + (items.length * 5)}px`, left: -offset }}>
+      <div className="overflow-hidden mx-auto relative" style={{ width: `${offsetPerStep}px` }}>
+        <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${items.length * offsetPerStep}px`, left: -offset }}>
           {items}
         </div>
       </div>

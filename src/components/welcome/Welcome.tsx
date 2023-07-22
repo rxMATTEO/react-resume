@@ -5,6 +5,7 @@ import EducationAndSkills from './EducationAndSkills.tsx';
 import Experience from './Experience.tsx';
 import Stack from './Stack.tsx';
 import Carousel from './Carousel.tsx';
+import Portfolio from '../portfolio/Portfolio';
 
 function Welcome() {
   return (
@@ -19,16 +20,17 @@ function Welcome() {
       <Divider />
       <Carousel
         items={[
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'red' }} />,
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'black' }} />,
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'white' }} />,
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'yellow' }} />,
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'blue' }} />,
-          <div className="inline-block mr-5" style={{ width: '300px', height: '300px', backgroundColor: 'orange' }} />,
+          <div className="pr-5 inline-block"><div className="inline-block" style={{ width: '300px', height: '300px', backgroundColor: 'red' }} /></div>,
+          <div className="pr-5 inline-block"><div className="inline-block" style={{ width: '300px', height: '300px', backgroundColor: 'blue' }} /></div>,
+          <div className="pr-5 inline-block"><div className="inline-block" style={{ width: '300px', height: '300px', backgroundColor: 'yellow' }} /></div>,
+          <div className="pr-5 inline-block"><div className="inline-block" style={{ width: '300px', height: '300px', backgroundColor: 'green' }} /></div>,
+          <div className="pr-5 inline-block"><div className="inline-block" style={{ width: '300px', height: '300px', backgroundColor: 'purple' }} /></div>,
         ]}
-        offsetPerStep={605}
+        offsetPerStep={600}
         displayPerPage={2}
       />
+      <Divider />
+      <Portfolio />
     </div>
   );
 }

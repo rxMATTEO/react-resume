@@ -1,8 +1,8 @@
 import {
-  ReactElement, JSX, useEffect, useRef, useState,
+  ReactElement, useEffect, useRef, useState,
 } from 'react';
 import './carousel.sass';
-import SwiperBullet from './SwiperBullet.tsx';
+import SwiperBullet, { SwiperBulletProps } from './SwiperBullet.tsx';
 
 type propTypes = {
   items: ReactElement[];
@@ -18,12 +18,15 @@ function Carousel(props: propTypes) {
   const [offset, setOffset] = useState(0);
   const maxPages = useRef(items.length / displayPerPage);
   const [selectedIndex, setIndex] = useState(0);
-  const [bullets, setBullets] = useState([] as JSX.Element[]);
+  const [bullets, setBullets] = useState([] as ReactElement<SwiperBulletProps>[]);
 
-  const onBulletClick = (index: number) => { setIndex(index); setOffset(index * 300); };
+  const onBulletClick = (index: number) => {
+    setIndex(index);
+    setOffset(index * 300);
+  };
 
   useEffect(() => {
-    const newBullets: JSX.Element[] = [];
+    const newBullets: ReactElement<SwiperBulletProps>[] = [];
     for (let i = 0; i < maxPages.current; i++) {
       newBullets.push(<SwiperBullet selectedIndex={selectedIndex} index={i} onclick={onBulletClick} />);
     }

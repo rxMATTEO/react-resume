@@ -3,9 +3,11 @@ import Isotope from 'isotope-layout';
 import './masonry.sass';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 
+type Filters = '*' | 'frontend' | 'backend' | 'langs'
+
 function Portfolio() {
   const isotope = useRef(null);
-  const [filterKey, setFilterKey] = useState('*');
+  const [filterKey, setFilterKey] = useState('*' as Filters);
 
   useEffect(() => {
     isotope.current = new Isotope('.isotope', {
@@ -51,22 +53,26 @@ function Portfolio() {
     isotope.current.arrange({ filter: filterKey === '*' ? '*' : `.${filterKey}` });
   }, [isotope, filterKey]);
 
+  function onFilterKeyChange(key: Filters) {
+    setFilterKey(key);
+  }
+
   return (
     <div className="mx-auto">
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Мое портфолио</p>
       <InlineSelector containerClassName="filters">
-        <div className="filter mr-5">Все</div>
-        <div className="filter mr-5">Языки</div>
-        <div className="filter mr-5">Frontend</div>
-        <div className="filter mr-5">Backend</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('*')}>Все</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('langs')}>Языки</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('frontend')}>Frontend</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('backend')}>Backend</div>
       </InlineSelector>
       <div className="isotope mt-5">
         <div className="h-64 filterable"><div className="bg-purple h-full">1</div></div>
-        <div className="h-36 filterable node"><div className="bg-purple h-full">node</div></div>
-        <div className="h-96 filterable node"><div className="bg-purple h-full">node</div></div>
-        <div onClick={() => setFilterKey('react')} className="h-96 filterable react"><div className="bg-purple h-full">react</div></div>
-        <div onClick={() => setFilterKey('react')} className="h-36 filterable react"><div className="bg-purple h-full">react</div></div>
-        <div className="h-24 filterable"><div className="bg-purple h-full">1</div></div>
+        <div className="h-36 filterable backend"><div className="bg-purple h-full">node</div></div>
+        <div className="h-96 filterable backend"><div className="bg-purple h-full">node</div></div>
+        <div className="h-96 filterable frontend"><div className="bg-purple h-full">react</div></div>
+        <div className="h-36 filterable frontend"><div className="bg-purple h-full">react</div></div>
+        <div className="h-24 filterable langs"><div className="bg-purple h-full">1</div></div>
       </div>
     </div>
   );

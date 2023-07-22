@@ -4,7 +4,7 @@
 @font-face {
   font-family: "NTSomic";
   font-weight: normal;
-  src: url("../fonts/NTSomic-Medium.woff2");
+  src: url("../static/fonts/NTSomic-Medium.woff2");
 }
 @font-face {
   font-family: "NTSomic";
@@ -38,6 +38,32 @@ h1 {
   color: white;
   font-weight: 500;
   font-family: NTSomic, cursive;
+}
+
+.selected {
+  position: relative;
+}
+.selected::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin: auto;
+  height: 2px;
+  background: #998ADB;
+  position: absolute;
+}
+@keyframes withFromZeroToHunna {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.selected::after {
+  animation-name: withFromZeroToHunna;
+  animation-duration: 0.5s;
 }
 
 .home {

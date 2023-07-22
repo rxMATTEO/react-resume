@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
 import './masonry.sass';
+import InlineSelector from '../inputs/InlineSelector.tsx';
 
 function Portfolio() {
   const isotope = useRef(null);
@@ -53,7 +54,13 @@ function Portfolio() {
   return (
     <div className="mx-auto">
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Мое портфолио</p>
-      <div className="isotope">
+      <InlineSelector containerClassName="filters">
+        <div className="filter mr-5">Все</div>
+        <div className="filter mr-5">Языки</div>
+        <div className="filter mr-5">Frontend</div>
+        <div className="filter mr-5">Backend</div>
+      </InlineSelector>
+      <div className="isotope mt-5">
         <div className="h-64 filterable"><div className="bg-purple h-full">1</div></div>
         <div className="h-36 filterable node"><div className="bg-purple h-full">node</div></div>
         <div className="h-96 filterable node"><div className="bg-purple h-full">node</div></div>

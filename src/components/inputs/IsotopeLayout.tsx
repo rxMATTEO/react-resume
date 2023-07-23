@@ -8,6 +8,7 @@ type IsotopeProps = {
   filterKey?: string
 }
 
+// todo move options to props
 function IsotopeLayout({ items, filterKey }: IsotopeProps) {
   const isotope = useRef(null);
 

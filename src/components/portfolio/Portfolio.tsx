@@ -3,7 +3,7 @@ import Isotope from 'isotope-layout';
 import './masonry.sass';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 
-type Filters = '*' | 'frontend' | 'backend' | 'langs'
+type Filters = '*' | 'csharp' | 'js' | 'ts'
 
 function Portfolio() {
   const isotope = useRef(null);
@@ -62,17 +62,26 @@ function Portfolio() {
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Мое портфолио</p>
       <InlineSelector containerClassName="filters">
         <div className="filter mr-5" onClick={() => onFilterKeyChange('*')}>Все</div>
-        <div className="filter mr-5" onClick={() => onFilterKeyChange('langs')}>Языки</div>
-        <div className="filter mr-5" onClick={() => onFilterKeyChange('frontend')}>Frontend</div>
-        <div className="filter mr-5" onClick={() => onFilterKeyChange('backend')}>Backend</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('js')}>JS</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('ts')}>TS</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('csharp')}>C#</div>
       </InlineSelector>
       <div className="isotope mt-5">
-        <div className="h-64 filterable"><div className="bg-purple h-full">1</div></div>
-        <div className="h-36 filterable backend"><div className="bg-purple h-full">node</div></div>
-        <div className="h-96 filterable backend"><div className="bg-purple h-full">node</div></div>
-        <div className="h-96 filterable frontend"><div className="bg-purple h-full">react</div></div>
-        <div className="h-36 filterable frontend"><div className="bg-purple h-full">react</div></div>
-        <div className="h-24 filterable langs"><div className="bg-purple h-full">1</div></div>
+        <div className="h-64 filterable w-1/3">
+          <div className="p-5 content shadow-ambient bg-fade h-full">
+            <div className="h-full z-10 relative">
+              <div className="thumbnail">
+                <img src="public/static/img/tme.png" className="img" alt="shit" />
+              </div>
+              <div className="h-1/3" />
+            </div>
+          </div>
+        </div>
+        <div className="h-64 filterable w-1/3">
+          <div className="p-5 content shadow-ambient bg-fade h-full">
+            <div className="h-full z-10 relative">Track my exception</div>
+          </div>
+        </div>
       </div>
     </div>
   );

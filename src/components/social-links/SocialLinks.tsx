@@ -6,6 +6,7 @@ function SocialLinks() {
       <span className="link">hh</span>
       <span className="link">tg</span>
       <span className="link">mail</span>
+      <span className="link">gh</span>
     </div>
   );
 }

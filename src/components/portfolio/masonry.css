@@ -1,6 +1,46 @@
 .isotope .filterable {
-  width: 33%;
-  padding: 0 10px 10px 0;
+  padding: 0 20px 10px 0;
+}
+.isotope .filterable .content {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.isotope .filterable .content::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: 1;
+}
+.isotope .filterable .content .thumbnail {
+  overflow: hidden;
+}
+.isotope .filterable .content .thumbnail .img {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 50px;
+  transform: scale(1.5);
+  display: inline;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.isotope .filterable .content:hover .thumbnail .img {
+  transform: scale(2);
+}
+.isotope .filterable .content:hover::before {
+  opacity: 1;
+}
+
+.filters .filter {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=masonry.css.map */

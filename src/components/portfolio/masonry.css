@@ -1,13 +1,17 @@
 .isotope .filterable {
   padding: 0 20px 10px 0;
+  border-radius: 10px;
+  display: block;
 }
 .isotope .filterable .content {
+  border-radius: inherit;
   width: 100%;
   position: relative;
   z-index: 10;
   transition: all 0.3s ease-in-out;
 }
 .isotope .filterable .content::before {
+  border-radius: inherit;
   content: "";
   position: absolute;
   transition: all 0.3s ease-in-out;
@@ -21,16 +25,14 @@
 }
 .isotope .filterable .content .thumbnail {
   overflow: hidden;
+  border-radius: 5px;
 }
 .isotope .filterable .content .thumbnail .img {
   transition: all 0.3s ease-in-out;
   position: relative;
-  top: 50px;
+  top: 40px;
   transform: scale(1.5);
-  display: inline;
   width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 .isotope .filterable .content:hover .thumbnail .img {
   transform: scale(2);

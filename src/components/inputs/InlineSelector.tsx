@@ -7,7 +7,7 @@ type InlineSelectorProps = {
 
 function InlineSelector({ children, containerClassName }: InlineSelectorProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  function onSelect(index) {
+  function onSelect(index: number) {
     setSelectedIndex(index);
   }
   return (

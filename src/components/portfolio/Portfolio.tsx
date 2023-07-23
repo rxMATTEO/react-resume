@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import '../inputs/masonry.sass';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 import IsotopeLayout from '../inputs/IsotopeLayout.tsx';
 import CardScaleImage from '../inputs/CardScaleImageProps.tsx';
 
-type Filters = '*' | 'csharp' | 'js' | 'ts'
+type Filters = '*' | 'csharp' | 'js' | 'ts' | 'vc'
 
 function Portfolio() {
   const [filterKey, setFilterKey] = useState('*' as Filters);
@@ -21,6 +21,7 @@ function Portfolio() {
         <div className="filter mr-5" onClick={() => onFilterKeyChange('js')}>JavaScript</div>
         <div className="filter mr-5" onClick={() => onFilterKeyChange('ts')}>TypeScript</div>
         <div className="filter mr-5" onClick={() => onFilterKeyChange('csharp')}>C#</div>
+        <div className="filter mr-5" onClick={() => onFilterKeyChange('vc')}>Контроль версий</div>
       </InlineSelector>
       <IsotopeLayout
         filterKey={filterKey}

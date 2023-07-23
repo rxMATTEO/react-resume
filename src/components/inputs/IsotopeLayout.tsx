@@ -1,6 +1,7 @@
 import {
-  ReactElement, useEffect, useRef, useState,
+  ReactElement, useEffect, useRef,
 } from 'react';
+// @ts-ignore
 import Isotope from 'isotope-layout';
 
 type IsotopeProps = {
@@ -8,9 +9,16 @@ type IsotopeProps = {
   filterKey?: string
 }
 
+type params = {
+  filter: string
+}
+type IsotopeType = {
+  arrange: (params: params) => void
+}
+
 // todo move options to props
 function IsotopeLayout({ items, filterKey }: IsotopeProps) {
-  const isotope = useRef(null);
+  const isotope = useRef({} as IsotopeType);
 
   useEffect(() => {
     isotope.current = new Isotope('.isotope', {
@@ -53,7 +61,9 @@ function IsotopeLayout({ items, filterKey }: IsotopeProps) {
   }, []);
 
   useEffect(() => {
-    isotope.current.arrange({ filter: filterKey === '*' ? '*' : `.${filterKey}` });
+    if (isotope.current.hasOwnProperty('arrange')) {
+      isotope.current?.arrange({ filter: filterKey === '*' ? '*' : `.${filterKey}` });
+    }
   }, [isotope, filterKey]);
   return (
     <div className="isotope">

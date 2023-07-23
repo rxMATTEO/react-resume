@@ -61,9 +61,7 @@ function IsotopeLayout({ items, filterKey }: IsotopeProps) {
   }, []);
 
   useEffect(() => {
-    if (isotope.current.hasOwnProperty('arrange')) {
-      isotope.current?.arrange({ filter: filterKey === '*' ? '*' : `.${filterKey}` });
-    }
+    isotope.current.arrange({ filter: filterKey === '*' ? '*' : `.${filterKey}` });
   }, [isotope, filterKey]);
   return (
     <div className="isotope">

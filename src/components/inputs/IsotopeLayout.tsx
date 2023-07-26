@@ -6,7 +6,8 @@ import Isotope from 'isotope-layout';
 
 type IsotopeProps = {
   items: ReactElement | ReactElement[],
-  filterKey?: string
+  filterKey?: string,
+  filters?: string,
 }
 
 type params = {

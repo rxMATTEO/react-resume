@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import '../inputs/masonry.sass';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 import IsotopeLayout from '../inputs/IsotopeLayout.tsx';
@@ -6,7 +6,7 @@ import CardScaleImage from '../inputs/CardScaleImageProps.tsx';
 
 function Portfolio() {
   const filters = {
-    '*': 'Все', csharp: 'C#', js: 'JavaScript', ts: 'TypeScript', other: 'Другие технологии',
+    '*': 'Все', csharp: 'C#', js: 'JavaScript', ts: 'TypeScript',
   };
   type Filters = keyof typeof filters;
   const [filterKey, setFilterKey] = useState('*' as Filters);
@@ -21,7 +21,7 @@ function Portfolio() {
       <InlineSelector containerClassName="filters">
         {
             Object.entries(filters).map(([key, value]) => (
-              <div className="filter mr-5" onClick={() => onFilterKeyChange(key as Filters)}>{value}</div>
+              <button type="button" className="filter mr-5" onClick={() => onFilterKeyChange(key as Filters)}>{value}</button>
             ))
         }
       </InlineSelector>

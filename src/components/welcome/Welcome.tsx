@@ -31,6 +31,7 @@ function Welcome() {
       />
       <Divider />
       <Portfolio />
+      <Divider />
     </div>
   );
 }

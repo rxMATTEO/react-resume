@@ -12,7 +12,7 @@ function CardScaleImage<T extends string>({
   href, imageSrc, title, filter, header,
 }: CardScaleImageProps<T>) {
   return (
-    <div className={`block mb-5 sm:h-[300px] h-[240px] filterable w-full lg:w-1/3 ${filter}`} href={href} target="_blank" rel="noreferrer">
+    <a className={`block mb-5 sm:h-[300px] h-[240px] filterable w-full lg:w-1/3 ${filter}`} href={href} target="_blank" rel="noreferrer">
       <div className="p-6 content shadow-ambient bg-fade">
         <div className="h-full z-10 relative">
           <div className="thumbnail">
@@ -24,7 +24,7 @@ function CardScaleImage<T extends string>({
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -13,7 +13,7 @@ function EducationAndSkills() {
         <div className="lg:w-1/2 skills relative right-0">
           <h1>Мои навыки</h1>
           <p className="text-lightgrey mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, consequuntur iure iusto porro reiciendis sint temporibus! Accusamus commodi doloribus in molestiae, molestias nesciunt porro provident, quos sequi voluptatem voluptates.
+            Я
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ function AboutMe() {
       </div>
       <div className="about lg:w-1/2" id="about">
         <p className="text-5xl font-light uppercase tracking-[5px]">Обо мне</p>
-        <p className="mt-10 text-xl font-bold">Я JavaScript разработчик с 3-ех летним опытом.</p>
+        <p className="mt-10 text-xl font-bold">Я Fullstack JavaScript/Typescript разработчик.</p>
         <p className="mt-5 text-lightgrey">
           Занимаюсь разработкой web-приложений на TypeScript и JavaScript.
           Ранее разрабатывал десктопные приложение для мелкого бизнеса на платформе .NET.
@@ -15,19 +15,20 @@ function AboutMe() {
         </p>
         <div className="flex flex-col lg:flex-row mt-5">
           <div className="flex flex-row items-center mr-5">
-            <span className="text-[50px] mr-2 font-bold">{'>30'}</span>
+            <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
             <span>
-              проектов
+              PET - проектов
               <br />
               разработано
             </span>
           </div>
           <div className="flex flex-row items-center">
-            <span className="text-[50px] font-bold mr-2">{'>30'}</span>
+            <span className="text-[50px] font-bold mr-2">{'>3'}</span>
             <span>
-              проектов
+              лет
               <br />
-              разработано
+              коммерческого
+              опыта
             </span>
           </div>
         </div>

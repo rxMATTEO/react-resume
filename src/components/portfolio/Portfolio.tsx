@@ -30,8 +30,12 @@ function Portfolio() {
         items={(
           <div className="isotope mt-5 flex flex-col">
             <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
-            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
-            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
+            <CardScaleImage<Filters> filter="ts" title="Vue, Nuxt 3, Prime Vue" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/translate-app" header="Synohunt" />
+            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/some-shop" header="Some shop" />
+            <CardScaleImage<Filters> filter="js" title="Vanilla JS" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/gitmeteo-app" header="Gismeteo template" />
+            <CardScaleImage<Filters> filter="csharp" title="WPF, MVVM, Entity framework, MS SQL" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/OfficeEquipmentManager-MVVM-" header="Office Equipment Manager" />
+            <CardScaleImage<Filters> filter="csharp" title="Windows forms, ASP.NET, MS SQL" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/Product-Accounting-Helper" header="Product Accounting Helper" />
+            <CardScaleImage<Filters> filter="csharp" title="Windows forms, ASP.NET, MS SQL" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/Marathon-WS" header="Марафон WorldSkills" />
           </div>
         )}
       />

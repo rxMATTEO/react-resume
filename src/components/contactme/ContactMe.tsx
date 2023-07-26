@@ -1,5 +1,3 @@
-import CardWithLabel from '../inputs/CardWithLabel.tsx';
-
 function ContactMe() {
   return (
     <div>

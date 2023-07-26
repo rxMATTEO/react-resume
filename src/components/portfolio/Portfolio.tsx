@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../inputs/masonry.sass';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 import IsotopeLayout from '../inputs/IsotopeLayout.tsx';
@@ -28,12 +28,12 @@ function Portfolio() {
       <IsotopeLayout
         filterKey={filterKey}
         items={(
-          <div className="isotope mt-5">
-            <CardScaleImage filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
-            <CardScaleImage filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
-            <CardScaleImage filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
+          <div className="isotope mt-5 flex flex-col">
+            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
+            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
+            <CardScaleImage<Filters> filter="js" title="React, Redux, Express" imageSrc="static/img/tme.png" href="https://github.com/volodin-artem/track-my-exception" header="Track my exception" />
           </div>
-)}
+        )}
       />
     </div>
   );

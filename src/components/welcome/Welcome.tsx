@@ -6,6 +6,7 @@ import Experience from './Experience.tsx';
 import Stack from './Stack.tsx';
 import Carousel from './Carousel.tsx';
 import Portfolio from '../portfolio/Portfolio';
+import ContactMe from '../contactme/ContactMe.tsx';
 
 function Welcome() {
   return (
@@ -32,6 +33,7 @@ function Welcome() {
       <Divider />
       <Portfolio />
       <Divider />
+      <ContactMe />
     </div>
   );
 }

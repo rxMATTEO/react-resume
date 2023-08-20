@@ -2,7 +2,7 @@ import CardWithImage from '../inputs/CardWithImage.tsx';
 
 function Experience() {
   return (
-    <div>
+    <div id="exp">
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Опыт работы</p>
       {/* todo place to comp or sass style */}
       <CardWithImage

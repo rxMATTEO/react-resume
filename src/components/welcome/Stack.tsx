@@ -2,7 +2,7 @@ import CardWithImage from '../inputs/CardWithImage.tsx';
 
 function Stack() {
   return (
-    <>
+    <div id="stack">
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Мой стэк</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-3 gap-5">
         <CardWithImage header="JavaScript/Typescript" label="" mainText="Тесты на Jest, стили на Tailwind" middleLabel="" imgPath="" />
@@ -14,7 +14,7 @@ function Stack() {
         <CardWithImage header="Контроль версий" label="" mainText="Git, gitlab" middleLabel="" imgPath="" />
         <CardWithImage header="Прочее" label="" mainText={'IDE: PHPstorm. \nЛинтеры: ESlint, prettier'} middleLabel="" imgPath="" />
       </div>
-    </>
+    </div>
   );
 }
 

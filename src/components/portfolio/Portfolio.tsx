@@ -16,7 +16,7 @@ function Portfolio() {
   }
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto" id="portfolio">
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10">Мое портфолио</p>
       <InlineSelector containerClassName="filters">
         {

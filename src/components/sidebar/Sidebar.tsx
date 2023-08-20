@@ -2,9 +2,6 @@ import NavLinks from './NavLinks';
 import SocialLinks from '../social-links/SocialLinks';
 
 function Sidebar() {
-  window.addEventListener('scroll', (ev) => {
-    console.log(ev);
-  });
   return (
     <div className="wrapper hidden sm:block sm:w-[10%]">
       <nav className="sidebar-left sm:w-[10%]">

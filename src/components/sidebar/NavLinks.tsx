@@ -1,4 +1,5 @@
 import './nav-links.sass';
+import { useEffect, useState } from 'react';
 
 function NavLinks() {
   type Links = {
@@ -6,10 +7,10 @@ function NavLinks() {
     href: string,
     selected: boolean,
   }
-  const links: Links[] = [
+  const linksNames: Links[] = [
     {
       text: 'Домашняя',
-      href: '#',
+      href: '#home',
       selected: false,
     },
     {
@@ -43,10 +44,29 @@ function NavLinks() {
       selected: false,
     },
   ];
+  const [links, setLinks] = useState(linksNames);
+  const [selected, setSelected] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', (ev) => {
+      setTimeout(() => {
+        const scrolled = linksNames.findLast((link) => {
+          const element = document.getElementById(link.href.slice(1));
+          if (element) {
+            const box = element.getBoundingClientRect();
+            return box.top <= 10;
+          }
+        });
+        if (scrolled) {
+          scrolled.selected = true;
+          setSelected(linksNames.indexOf(scrolled));
+        }
+      });
+    }, 0);
+  }, [selected]);
   return (
     <div className="nav-menu">
       {
-        links.map((link) => <a href={link.href} className="nav-link">{link.text}</a>)
+        links.map((link, index) => <a href={link.href} className={`nav-link ${selected === index ? '!text-purple' : ''}`}>{link.text}</a>)
       }
     </div>
   );

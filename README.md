@@ -3,7 +3,7 @@ My personal resume based on React 18, TypeScript, SASS, vite and tailwind
 
 # Clone
 
-`git clone https://github.com/volodin-artem/react-resume.git`
+`git clone https://github.com/rxMATTEO/react-resume.git`
 
 # Run development
 

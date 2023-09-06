@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 
 type ButtonProps = {
   text: string,
-  onclick?: () => any,
+  onclick?: () => undefined,
   color?: string,
   icon?: ReactElement
 }

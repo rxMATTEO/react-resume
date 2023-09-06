@@ -1,7 +1,7 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaTelegram } from 'react-icons/fa';
 import Button from '../inputs/Button.tsx';
-import HhLogo from '../inputs/HhLogo.jsx';
+import HhLogo from '../inputs/HhLogo.tsx';
 
 function ContactMe() {
   return (

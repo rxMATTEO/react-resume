@@ -45,7 +45,7 @@ function Portfolio() {
     {
       filter: 'react',
       title: 'React, Redux, Express, SASS',
-      imageSrc: 'static/img/tme.png',
+      imageSrc: 'static/img/ss.png',
       href: 'https://github.com/volodin-artem/some-shop',
       header: 'Some shop',
       logo: (
@@ -57,7 +57,7 @@ function Portfolio() {
     {
       filter: 'csharp',
       title: 'C#, MSSQL, WinForms',
-      imageSrc: 'static/img/tme.png',
+      imageSrc: 'static/img/pah.png',
       href: 'https://github.com/volodin-artem/Product-Accounting-Helper',
       header: 'Product Accounting Helper',
       logo: (
@@ -69,7 +69,7 @@ function Portfolio() {
     {
       filter: 'csharp',
       title: 'C#, MSSQL, WPF, Entity Framework',
-      imageSrc: 'static/img/tme.png',
+      imageSrc: 'static/img/oem.png',
       href: 'https://github.com/volodin-artem/OfficeEquipmentManager-MVVM-',
       header: 'Office equipment manager',
       logo: (

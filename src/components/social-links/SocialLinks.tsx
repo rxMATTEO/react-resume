@@ -3,21 +3,42 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaTelegram } from 'react-icons/fa';
 import { CgMail } from 'react-icons/cg';
 import { IconContext } from 'react-icons';
-import { ReactElement, useMemo, useRef } from 'react';
+import {
+  ReactElement, useMemo, useRef,
+} from 'react';
 import HhLogo from '../inputs/HhLogo.tsx';
 
 function SocialLinks() {
   const sizeRef = useRef({ size: '1.5rem' });
   const size = useMemo(() => sizeRef, [sizeRef]);
 
-  const icons: Readonly<ReactElement[]> = [
-    <HhLogo color="purple" textColor="black" />, <AiFillGithub />, <FaTelegram />, <CgMail />,
+  const icons: Readonly<ReactElement<{ title: string }>[]> = [
+    <div title="HH">
+      <a href="https://hh.ru/here-link" target="_blank" rel="noreferrer">
+        <HhLogo color="purple" textColor="black" />
+      </a>
+    </div>,
+    <div title="Github">
+      <a href="https://github.com/rxmatteo" target="_blank" rel="noreferrer">
+        <AiFillGithub />
+      </a>
+    </div>,
+    <div title="Telegram">
+      <a href="https://t.me/rxmatteo" target="_blank" rel="noreferrer">
+        <FaTelegram />
+      </a>
+    </div>,
+    <div title="Gmail">
+      <a href="mailto:artemvolodin900000@gmail.com">
+        <CgMail />
+      </a>
+    </div>,
   ];
   return (
     <div className="soc-links flex flex-row items-center">
       {
         icons.map((icon) => (
-          <div className="flex-1">
+          <div className="flex-1 cursor-pointer" title={icon.props.title}>
             <IconContext.Provider value={size.current}>
               {icon}
             </IconContext.Provider>

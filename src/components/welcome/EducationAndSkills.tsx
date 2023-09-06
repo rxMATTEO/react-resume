@@ -13,7 +13,19 @@ function EducationAndSkills() {
         <div className="lg:w-1/2 skills relative right-0">
           <h1>Мои навыки</h1>
           <p className="text-lightgrey mt-5">
-            Я
+            Я люблю изучать новые технологии, поэтому владею Vue и React. Пишу backend на Nitro и Express.
+          </p>
+          <p className="my-5">
+            На данный момент работаем над созданием веб-приложения для проверки существующих проектов на уязвимости по базе уязвимостей БДУ.
+          </p>
+          <p>
+            В свободное время пишу open source веб приложения.
+            Одно из последних - интерактивная игра по нахождению синонимов для слов, на разных языках -
+            <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
+            Прохожу испытания на
+
+            <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars</a>
+            .
           </p>
         </div>
       </div>

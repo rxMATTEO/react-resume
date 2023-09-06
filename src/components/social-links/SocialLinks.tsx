@@ -11,7 +11,7 @@ function SocialLinks() {
   const size = useMemo(() => sizeRef, [sizeRef]);
 
   const icons: Readonly<ReactElement[]> = [
-    <HhLogo />, <AiFillGithub />, <FaTelegram />, <CgMail />,
+    <HhLogo color="purple" textColor="black" />, <AiFillGithub />, <FaTelegram />, <CgMail />,
   ];
   return (
     <div className="soc-links flex flex-row items-center">

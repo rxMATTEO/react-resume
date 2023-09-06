@@ -1,15 +1,17 @@
 import './masonry.sass';
+import { ReactElement } from 'react';
 
-type CardScaleImageProps<T extends string> = {
+export type CardScaleImageProps<T extends string> = {
   href: string,
   imageSrc: string,
   title: string,
   header: string,
   filter?: T,
+  logo?: ReactElement,
 }
 
 function CardScaleImage<T extends string>({
-  href, imageSrc, title, filter, header,
+  href, imageSrc, title, filter, header, logo,
 }: CardScaleImageProps<T>) {
   return (
     <a className={`block mb-5 sm:h-[300px] h-[240px] filterable w-full lg:w-1/3 ${filter}`} href={href} target="_blank" rel="noreferrer">
@@ -19,7 +21,12 @@ function CardScaleImage<T extends string>({
             <img src={imageSrc} className="img" alt={filter} />
           </div>
           <div className="h-1/3 pt-5">
-            <p className="font-normal text-sm uppercase text-purple">{title}</p>
+            <div className="flex place-content-between items-center">
+              <p className="font-normal text-sm uppercase text-purple">{title}</p>
+              <p>
+                { logo }
+              </p>
+            </div>
             <p className="font-bold text-xl">{header}</p>
           </div>
         </div>
@@ -30,6 +37,7 @@ function CardScaleImage<T extends string>({
 
 CardScaleImage.defaultProps = {
   filter: '',
+  logo: null,
 };
 
 export default CardScaleImage;

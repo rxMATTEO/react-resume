@@ -43,11 +43,11 @@ function Welcome() {
     <div className="sm:w-2/3 pr-5 mx-auto">
       <AboutMe />
       <Divider />
-      <EducationAndSkills />
-      <Divider />
       <Experience />
       <Divider />
       <Stack />
+      <Divider />
+      <EducationAndSkills />
       <Divider />
       <Carousel
         items={carouselItems}

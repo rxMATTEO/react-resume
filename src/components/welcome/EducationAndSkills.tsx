@@ -22,10 +22,10 @@ function EducationAndSkills() {
             В свободное время пишу open source веб приложения.
             Одно из последних - интерактивная игра по нахождению синонимов для слов, на разных языках -
             <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
-            Прохожу испытания на
-
-            <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars</a>
-            .
+          </p>
+          <p>
+            Часто прохожу испытания на
+            <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars.</a>
           </p>
         </div>
       </div>

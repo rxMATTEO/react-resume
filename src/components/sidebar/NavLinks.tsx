@@ -44,10 +44,10 @@ function NavLinks() {
       selected: false,
     },
   ];
-  const [links, setLinks] = useState(linksNames);
+  const [links] = useState(linksNames);
   const [selected, setSelected] = useState(0);
   useEffect(() => {
-    window.addEventListener('scroll', (ev) => {
+    window.addEventListener('scroll', () => {
       setTimeout(() => {
         const scrolled = linksNames.findLast((link) => {
           const element = document.getElementById(link.href.slice(1));
@@ -61,7 +61,7 @@ function NavLinks() {
           setSelected(linksNames.indexOf(scrolled));
         }
       });
-    }, 0);
+    });
   }, [selected]);
   return (
     <div className="nav-menu">

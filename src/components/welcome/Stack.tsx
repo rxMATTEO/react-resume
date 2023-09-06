@@ -12,7 +12,18 @@ function Stack() {
         <CardWithImage header="Node.JS" label="" mainText="Express, Sequelize, Prisma" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-plain.svg" />
         <CardWithImage header="Сборщики" label="" mainText="Vite, Webpack" middleLabel="" imgPath="https://camo.githubusercontent.com/a845cf08bc585efdc903b5b4734cbc0623967d16216446d8c9c2fa299edfde34/68747470733a2f2f766974656a732e72752f6c6f676f2e737667" />
         <CardWithImage header="Контроль версий" label="" mainText="Git, Gitlab" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/gitlab/gitlab-original.svg" />
-        <CardWithImage header="Прочее" label="" mainText={'IDE: PHPstorm. \nЛинтеры: ESlint, prettier'} middleLabel="" imgPath="https://camo.githubusercontent.com/5c6f6d20c5e35e76e8e663040ca89c35af5b670d05b3069507bc560fc59c76c2/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f72752f7468756d622f632f63382f2544302539422544302542452544302542332544302542452544312538322544302542382544302542465f50687053746f726d2e7376672f3132303070782d2544302539422544302542452544302542332544302542452544312538322544302542382544302542465f50687053746f726d2e7376672e706e67" />
+        <CardWithImage
+          header="Прочее"
+          label=""
+          mainText={(
+            <div>
+              IDE: PHPstorm.
+              <p>Линтеры: ESlint, prettier</p>
+            </div>
+)}
+          middleLabel=""
+          imgPath="https://camo.githubusercontent.com/5c6f6d20c5e35e76e8e663040ca89c35af5b670d05b3069507bc560fc59c76c2/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f72752f7468756d622f632f63382f2544302539422544302542452544302542332544302542452544312538322544302542382544302542465f50687053746f726d2e7376672f3132303070782d2544302539422544302542452544302542332544302542452544312538322544302542382544302542465f50687053746f726d2e7376672e706e67"
+        />
       </div>
     </div>
   );

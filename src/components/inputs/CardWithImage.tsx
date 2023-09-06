@@ -1,7 +1,9 @@
+import { ReactElement } from 'react';
+
 type propsTypes = {
   header: string,
   label: string,
-  mainText: string,
+  mainText: string | ReactElement,
   middleLabel: string,
   imgPath: string,
   hoverable?: boolean,

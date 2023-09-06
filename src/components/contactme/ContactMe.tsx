@@ -1,6 +1,7 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaTelegram } from 'react-icons/fa';
 import Button from '../inputs/Button.tsx';
+import HhLogo from '../inputs/HhLogo.jsx';
 
 function ContactMe() {
   return (
@@ -14,7 +15,7 @@ function ContactMe() {
           <Button icon={<FaTelegram />} text="Telegram" color="!bg-blue-400 hover:!text-white" />
         </a>
         <a target="_blank" href="https://hh.ru/here-link-to-resume" rel="noreferrer">
-          <Button icon={<span className="bg-white text-xs rounded-full text-red-500 p-1">hh</span>} text="HeadHunter" color="!bg-red-500 hover:!text-white" />
+          <Button icon={<HhLogo />} text="HeadHunter" color="!bg-red-500 hover:!text-white" />
         </a>
       </div>
     </div>

@@ -7,7 +7,7 @@ function Sidebar() {
       <nav className="sidebar-left sm:w-[10%]">
         <div className="top">
           <div className="image"><img src="./static/about-me.jpg" alt="avatar" /></div>
-          <span className="image-label">@volodin-artem</span>
+          <span className="image-label">@rxMATTEO</span>
         </div>
         <NavLinks />
         <SocialLinks />

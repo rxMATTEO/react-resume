@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../inputs/masonry.sass';
 import { IoLogoReact, IoLogoVue } from 'react-icons/io5';
+import { SiCsharp } from 'react-icons/si';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 import IsotopeLayout from '../inputs/IsotopeLayout.tsx';
 import CardScaleImage, { CardScaleImageProps } from '../inputs/CardScaleImageProps.tsx';
@@ -19,8 +20,8 @@ function Portfolio() {
   const projects: CardScaleImageProps<Filter>[] = [
     {
       filter: 'vue',
-      title: 'Nuxt, Vue, Tailwind',
-      imageSrc: 'static/img/tme.png',
+      title: 'Nuxt, Vue, Nitro, Tailwind, PrimeVue',
+      imageSrc: 'static/img/synohunt.png',
       href: 'https://github.com/rxMATTEO/synohunt',
       header: 'Synohunt',
       logo: (
@@ -31,13 +32,49 @@ function Portfolio() {
     },
     {
       filter: 'react',
-      title: 'Nuxt, Vue, Tailwind',
+      title: 'React, Redux, Express, Sequelize',
       imageSrc: 'static/img/tme.png',
-      href: 'https://github.com/volodin-artem/track-my-exception',
+      href: 'https://github.com/rxMATTEO/track-my-exception',
       header: 'Track my exception',
       logo: (
         <div className="text-blue-400">
           <IoLogoReact />
+        </div>
+      ),
+    },
+    {
+      filter: 'react',
+      title: 'React, Redux, Express, SASS',
+      imageSrc: 'static/img/tme.png',
+      href: 'https://github.com/volodin-artem/some-shop',
+      header: 'Some shop',
+      logo: (
+        <div className="text-blue-400">
+          <IoLogoReact />
+        </div>
+      ),
+    },
+    {
+      filter: 'csharp',
+      title: 'C#, MSSQL, WinForms',
+      imageSrc: 'static/img/tme.png',
+      href: 'https://github.com/volodin-artem/Product-Accounting-Helper',
+      header: 'Product Accounting Helper',
+      logo: (
+        <div className="text-indigo-400">
+          <SiCsharp />
+        </div>
+      ),
+    },
+    {
+      filter: 'csharp',
+      title: 'C#, MSSQL, WPF, Entity Framework',
+      imageSrc: 'static/img/tme.png',
+      href: 'https://github.com/volodin-artem/OfficeEquipmentManager-MVVM-',
+      header: 'Office equipment manager',
+      logo: (
+        <div className="text-indigo-400">
+          <SiCsharp />
         </div>
       ),
     },

@@ -56,6 +56,18 @@ function Portfolio() {
     },
     {
       filter: 'csharp',
+      title: 'C#, MSSQL, WPF, Entity Framework',
+      imageSrc: 'static/img/oem.png',
+      href: 'https://github.com/volodin-artem/OfficeEquipmentManager-MVVM-',
+      header: 'Office equipment manager',
+      logo: (
+        <div className="text-indigo-400">
+          <SiCsharp />
+        </div>
+      ),
+    },
+    {
+      filter: 'csharp',
       title: 'C#, MSSQL, WinForms',
       imageSrc: 'static/img/pah.png',
       href: 'https://github.com/volodin-artem/Product-Accounting-Helper',
@@ -67,14 +79,14 @@ function Portfolio() {
       ),
     },
     {
-      filter: 'csharp',
-      title: 'C#, MSSQL, WPF, Entity Framework',
-      imageSrc: 'static/img/oem.png',
-      href: 'https://github.com/volodin-artem/OfficeEquipmentManager-MVVM-',
-      header: 'Office equipment manager',
+      filter: 'react',
+      title: 'React, TypeScript, Tailwind, SASS',
+      imageSrc: 'static/img/resume.png',
+      href: 'https://github.com/rxMATTEO/react-resume',
+      header: 'Resume',
       logo: (
-        <div className="text-indigo-400">
-          <SiCsharp />
+        <div className="text-blue-400">
+          <IoLogoReact />
         </div>
       ),
     },

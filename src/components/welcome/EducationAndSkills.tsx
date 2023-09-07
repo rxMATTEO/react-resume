@@ -6,27 +6,36 @@ function EducationAndSkills() {
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10" id="skills">Образование и навыки</p>
       <div className="flex flex-col lg:flex-row mx-auto place-content-between">
         <div className="education lg:w-1/3">
-          <CardWithLabel header="Graphic Designer" label="2017-2021" mainText="International Design Institute" />
-          <CardWithLabel header="Graphic Designer" label="2017-2021" mainText="International Design Institute" />
-          <CardWithLabel header="Graphic Designer" label="2017-2021" mainText="International Design Institute" />
+          <CardWithLabel header="Cпециалист по информационным системам и программированию" label="2017-2021" mainText="Можайский техникум" />
         </div>
         <div className="lg:w-1/2 skills relative right-0">
-          <h1>Мои навыки</h1>
-          <p className="text-lightgrey mt-5">
-            Я люблю изучать новые технологии, поэтому владею Vue и React. Пишу backend на Nitro и Express.
+          <p className=" text-lightgrey">
+            Во время учебы занимал призовые места в чемпионатах
+            <a href="https://worldskills.ru/" target="_blank" rel="noreferrer" className="text-purple"> WorldSkills </a>
+            по специализации - разработка настольных приложений для бизнеса.
           </p>
-          <p className="my-5">
-            На данный момент работаем над созданием веб-приложения для проверки существующих проектов на уязвимости по базе уязвимостей БДУ.
-          </p>
-          <p>
-            В свободное время пишу open source веб приложения.
-            Одно из последних - интерактивная игра по нахождению синонимов для слов, на разных языках -
-            <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
-          </p>
-          <p>
-            Часто прохожу испытания на
-            <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars.</a>
-          </p>
+          <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>
+          <p>Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие</p>
+          <p>Также проектировал и создавал базы данных, используя Microsoft SQL.</p>
+          <div className="flex flex-col lg:flex-row mt-5">
+            <div className="flex flex-row items-center mr-5">
+              <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
+              <span>
+                PET - проектов
+                <br />
+                разработано
+              </span>
+            </div>
+            <div className="flex flex-row items-center">
+              <span className="text-[50px] font-bold mr-2">{'>3'}</span>
+              <span>
+                лет
+                <br />
+                коммерческого
+                опыта
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </>

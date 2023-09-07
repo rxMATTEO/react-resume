@@ -13,7 +13,7 @@ function CardWithLabel(props: propsTypes) {
       <span className="text-left align-top bg-purple p-0.5 text-sm label relative -ml-1">{label}</span>
       <div className="ml-5 mt-3">
         <p className="text-white">{header}</p>
-        <p className="mt-2">{mainText}</p>
+        <p className="mt-2 text-xs">{mainText}</p>
       </div>
     </div>
   );

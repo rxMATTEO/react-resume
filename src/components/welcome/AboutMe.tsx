@@ -6,32 +6,48 @@ function AboutMe() {
       </div>
       <div className="about lg:w-1/2">
         <p className="text-5xl font-light uppercase tracking-[5px]">Обо мне</p>
-        <p className="mt-10 text-xl font-bold">Я Fullstack JavaScript/Typescript разработчик.</p>
-        <p className="mt-5 text-lightgrey">
-          Занимаюсь разработкой web-приложений на TypeScript и JavaScript.
-          Ранее разрабатывал десктопные приложение для мелкого бизнеса на платформе .NET, в основном используя C# и WPF.
-          Проживаю в Московской области, Кубинка.
-          На данный момент разрабатываю безопасные web приложения для Российских космических систем в большой команде.
+        <p className="text-lightgrey mt-7">
+          Меня зовут
+          <strong> Артем</strong>
+          , мне
+          <span> 22 года</span>
+          . Над разработкой программного обеспечения и веб приложений работаю 4 года.
+          <p>
+            <br />
+            Начинал разрабатывать приложения для десктопа на .NET, впоследствии перешел на fullstack разработку на JavaScript. Первым frontend фреймворком был
+            {' '}
+            <span className="text-blue-300 font-bold">React</span>
+            , в последнее время чаще использую
+            {' '}
+            <span className="text-green-400 font-bold">Vue</span>
+            .
+            <br />
+            <p>
+              Люблю использовать
+              {' '}
+              <span className="font-bold text-blue-200">Utility-First CSS</span>
+              {' '}
+              и
+              <span className="font-bold text-pink-300"> SASS</span>
+              .
+            </p>
+            Пишу backend на Nitro и Express при участии Prisma ORM.
+          </p>
         </p>
-        <div className="flex flex-col lg:flex-row mt-5">
-          <div className="flex flex-row items-center mr-5">
-            <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
-            <span>
-              PET - проектов
-              <br />
-              разработано
-            </span>
-          </div>
-          <div className="flex flex-row items-center">
-            <span className="text-[50px] font-bold mr-2">{'>3'}</span>
-            <span>
-              лет
-              <br />
-              коммерческого
-              опыта
-            </span>
-          </div>
-        </div>
+        <p className="mt-5">
+          В свободное время пишу
+          <strong className=""> open source </strong>
+          fullstack веб приложения.
+          Одно из последних - интерактивная игра по нахождению синонимов для слов, на разных языках -
+          <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
+        </p>
+        <p>
+          Часто прохожу испытания на
+          <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars.</a>
+        </p>
+        <br />
+        <p>Заблокировали основной Github из-за места работы, в связи с чем утеряна куча репозиториев, из них малая часть мигрировала на новый.</p>
+
       </div>
     </div>
   );

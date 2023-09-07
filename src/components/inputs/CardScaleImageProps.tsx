@@ -14,7 +14,7 @@ function CardScaleImage<T extends string>({
   href, imageSrc, title, filter, header, logo,
 }: CardScaleImageProps<T>) {
   return (
-    <a className={`block mb-5 sm:h-[300px] h-[240px] filterable w-full lg:w-1/3 ${filter}`} href={href} target="_blank" rel="noreferrer">
+    <a className={`block mb-5 sm:h-[300px] h-[240px] filterable transition-colors duration-700 ease-in-out hover:!bg-purple w-full lg:w-1/3 ${filter}`} href={href} target="_blank" rel="noreferrer">
       <div className="h-full p-6 content shadow-ambient bg-fade">
         <div className="h-full z-10 relative">
           <div className="h-2/3 thumbnail">

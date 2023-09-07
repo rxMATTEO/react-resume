@@ -4,7 +4,7 @@ type HhLogoProps = {
 }
 
 function HhLogo({ color, textColor } : HhLogoProps) {
-  return <span className={`bg-${color} text-xs rounded-full text-${textColor} p-1`}>hh</span>;
+  return <span className={`bg-${color} text-xs rounded-full ${textColor} p-1`}>hh</span>;
 }
 
 HhLogo.defaultProps = {

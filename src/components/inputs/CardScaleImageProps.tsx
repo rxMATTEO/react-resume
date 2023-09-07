@@ -21,7 +21,7 @@ function CardScaleImage<T extends string>({
           <div className="h-2/5 thumbnail">
             <img src={imageSrc} className="img" alt={filter} />
           </div>
-          <div className="h-3/5 pt-2">
+          <div className="h-3/5 pt-2 overflow-hidden">
             <div className="flex place-content-between items-center">
               <p className="font-normal text-xs py-1 uppercase text-purple">{title}</p>
               <p>
@@ -29,7 +29,7 @@ function CardScaleImage<T extends string>({
               </p>
             </div>
             <p className="font-bold text-xl">{header}</p>
-            <div className="mt-1 absolute bottom-0">
+            <div className="mt-1 md:absolute bottom-0">
               <p className="text-sm relative bottom-0">
                 {description}
               </p>

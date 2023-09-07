@@ -2,7 +2,7 @@ function AboutMe() {
   return (
     <div className="flex flex-col lg:flex-row mx-auto place-content-between" id="about">
       <div className="image lg:w-1/2 mr-10">
-        <img src="https://media.tenor.com/CpJSkREXARYAAAAd/computer.gif" alt="me" />
+        <img src="/static/img/vue.png" />
       </div>
       <div className="about lg:w-1/2">
         <p className="text-5xl font-light uppercase tracking-[5px]">Обо мне</p>

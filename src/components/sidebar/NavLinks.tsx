@@ -19,20 +19,12 @@ function NavLinks() {
       selected: false,
     },
     {
-      text: 'Навыки',
-      href: '#skills',
-      selected: false,
-    },
-    {
       text: 'Опыт',
       href: '#exp',
       selected: false,
     },
-    {
-      text: 'Стэк',
-      href: '#stack',
-      selected: false,
-    },
+    { text: 'Стэк', href: '#stack', selected: false },
+    { text: 'Навыки', href: '#skills', selected: false },
     {
       text: 'Портфолио',
       href: '#portfolio',
@@ -40,7 +32,7 @@ function NavLinks() {
     },
     {
       text: 'Контакты',
-      href: '#',
+      href: '#contactme',
       selected: false,
     },
   ];

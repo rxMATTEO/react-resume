@@ -40,7 +40,7 @@ function Welcome() {
     </div>,
   ];
   return (
-    <div className="sm:w-2/3 pr-5 mx-auto">
+    <div className="xl:w-2/3 pr-5 mx-auto">
       <AboutMe />
       <Divider />
       <Experience />

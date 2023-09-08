@@ -3,7 +3,7 @@ import Button from '../inputs/Button.tsx';
 
 function Home() {
   return (
-    <div className="home items-center place-content-between" id="home">
+    <div className="max-md:text-center md:pl-5 md:flex-row max-md:py-10 flex-col home items-center place-content-between" id="home">
       <div>
         <h6 className="label">Привет, меня зовут</h6>
         <h1 className="label">Артем Володин</h1>

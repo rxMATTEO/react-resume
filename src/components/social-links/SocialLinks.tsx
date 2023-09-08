@@ -35,7 +35,7 @@ function SocialLinks() {
     </div>,
   ];
   return (
-    <div className="soc-links flex flex-row items-center">
+    <div className="soc-links flex xl:flex-row items-center lg:flex-col">
       {
         icons.map((icon) => (
           <div className="flex-1 cursor-pointer" title={icon.props.title}>

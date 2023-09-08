@@ -56,7 +56,7 @@ function NavLinks() {
     });
   }, [selected]);
   return (
-    <div className="nav-menu">
+    <div className="xl:pl-5 pl-2 nav-menu">
       {
         links.map((link, index) => <a href={link.href} className={`nav-link ${selected === index ? '!text-purple' : ''}`}>{link.text}</a>)
       }

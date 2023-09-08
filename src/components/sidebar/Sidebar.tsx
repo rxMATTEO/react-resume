@@ -6,7 +6,7 @@ function Sidebar() {
     <div className="wrapper hidden lg:block lg:w-[10%]">
       <nav className="sidebar-left sm:w-[10%]">
         <div className="top">
-          <div className="image"><img src="./static/about-me.jpg" alt="avatar" /></div>
+          <div className="image"><img src="https://avatars.githubusercontent.com/u/48668534?v=4" alt="avatar" /></div>
           <a className="image-label text-purple" href="https://linktr.ee/rxMATTEO" target="_blank" rel="noreferrer">@rxMATTEO</a>
         </div>
         <NavLinks />

@@ -22,9 +22,7 @@ function EducationAndSkills() {
               <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
               <span>
                 PET
-                {' '}
                 <br />
-                {' '}
                 проектов
               </span>
             </div>

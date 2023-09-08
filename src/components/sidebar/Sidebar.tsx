@@ -1,9 +1,9 @@
-import NavLinks from './NavLinks';
-import SocialLinks from '../social-links/SocialLinks';
+import NavLinks from './NavLinks.tsx';
+import SocialLinks from '../social-links/SocialLinks.tsx';
 
 function Sidebar() {
   return (
-    <div className="wrapper hidden sm:block sm:w-[10%]">
+    <div className="wrapper hidden lg:block lg:w-[10%]">
       <nav className="sidebar-left sm:w-[10%]">
         <div className="top">
           <div className="image"><img src="./static/about-me.jpg" alt="avatar" /></div>

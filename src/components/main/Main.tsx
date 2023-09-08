@@ -4,7 +4,7 @@ import Welcome from '../welcome/Welcome.tsx';
 
 function Main() {
   return (
-    <div className="main overflow-hidden sm:w-[90%] max-w-full">
+    <div className="main overflow-hidden lg:w-[90%] max-w-full">
       <Home />
       <Welcome />
     </div>

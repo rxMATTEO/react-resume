@@ -30,7 +30,7 @@ function CardScaleImage<T extends string>({
             </div>
             <p className="font-bold text-xl">{header}</p>
             <div className="mt-1 md:absolute bottom-0">
-              <p className="text-sm relative bottom-0">
+              <p className="text-sm relative bottom-0 line-clamp-4">
                 {description}
               </p>
             </div>

@@ -21,9 +21,11 @@ function EducationAndSkills() {
             <div className="flex flex-row items-center mr-5">
               <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
               <span>
-                PET - проектов
+                PET
+                {' '}
                 <br />
-                разработано
+                {' '}
+                проектов
               </span>
             </div>
             <div className="flex flex-row items-center">

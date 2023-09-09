@@ -1,10 +1,10 @@
 function AboutMe() {
   return (
-    <div className="flex flex-col lg:flex-row mx-auto place-content-between" id="about">
-      <div className="image lg:w-1/2 mr-10">
-        <img src="https://sergio-react.vercel.app/static/img/about-me.png" alt="me" />
+    <div className="flex flex-col lg:flex-row mx-auto place-content-between max-lg:items-center" id="about">
+      <div className="image lg:w-1/2 lg:mr-10 lg:order-1 order-2">
+        <img src="/static/img/vue.png" />
       </div>
-      <div className="about lg:w-1/2">
+      <div className="about lg:w-1/2 lg:order-1 order-1">
         <p className="text-5xl font-light uppercase tracking-[5px]">Обо мне</p>
         <p className="text-lightgrey mt-7">
           Меня зовут

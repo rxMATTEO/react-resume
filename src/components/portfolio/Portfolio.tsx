@@ -29,6 +29,8 @@ function Portfolio() {
           <IoLogoVue />
         </div>
       ),
+      description: `Интерактивная браузерная игра по нахождению синонимов для слов на различных языках.
+      Имеет систему очков и монет, для покупок подсказок.`,
     },
     {
       filter: 'react',
@@ -41,6 +43,8 @@ function Portfolio() {
           <IoLogoReact />
         </div>
       ),
+      description: `Веб приложение для мониторинга исключений в JavaScript проектах.
+      Собирает информацию об ошибках, исключениях и предупреждениях.`,
     },
     {
       filter: 'react',
@@ -53,6 +57,8 @@ function Portfolio() {
           <IoLogoReact />
         </div>
       ),
+      description: `Шаблон интернет-магазина электроники.
+      Имеет систему категорий, отзывов, поиска, рейтингов и покупки товаров.`,
     },
     {
       filter: 'csharp',
@@ -65,6 +71,8 @@ function Portfolio() {
           <SiCsharp />
         </div>
       ),
+      description: `Десктопный помощник для организации учета оргтехники. 
+      Имеет возможность генерации штрих-кодов, систему авторизации управления группами техники и вывод в таблицы Word.`,
     },
     {
       filter: 'csharp',
@@ -77,6 +85,8 @@ function Portfolio() {
           <SiCsharp />
         </div>
       ),
+      description: `Помощник учета товаров на предприятии. 
+      Включает множество групп товаров, умеет печатать информацию об продукте и учитывать срок их хранения.`,
     },
     {
       filter: 'react',
@@ -89,6 +99,7 @@ function Portfolio() {
           <IoLogoReact />
         </div>
       ),
+      description: 'Текущее резюме с информацией обо мне. В некоторой части наследует предыдущее, написанное на Vanilla JS.',
     },
   ];
 
@@ -107,6 +118,8 @@ function Portfolio() {
         items={(
           <div className="isotope mt-5 flex flex-col">
             {
+              // it's spreading only props of a child element
+              // eslint-disable-next-line react/jsx-props-no-spreading
               projects.map((project) => (<CardScaleImage {...project} />))
             }
           </div>

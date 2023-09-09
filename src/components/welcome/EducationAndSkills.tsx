@@ -15,15 +15,15 @@ function EducationAndSkills() {
             по специализации - разработка настольных приложений для бизнеса.
           </p>
           <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>
-          <p>Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие</p>
+          <p>Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие.</p>
           <p>Также проектировал и создавал базы данных, используя Microsoft SQL.</p>
           <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-row items-center mr-5">
               <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
               <span>
-                PET - проектов
+                PET
                 <br />
-                разработано
+                проектов
               </span>
             </div>
             <div className="flex flex-row items-center">

@@ -15,7 +15,7 @@ function SocialLinks() {
   const icons: Readonly<ReactElement<{ title: string }>[]> = [
     <div title="HH">
       <a href="https://hh.ru/here-link" target="_blank" rel="noreferrer">
-        <HhLogo color="purple" textColor="black" />
+        <HhLogo color="purple" textColor="text-black" />
       </a>
     </div>,
     <div title="Github">
@@ -35,7 +35,7 @@ function SocialLinks() {
     </div>,
   ];
   return (
-    <div className="soc-links flex flex-row items-center">
+    <div className="soc-links flex xl:flex-row items-center lg:flex-col">
       {
         icons.map((icon) => (
           <div className="flex-1 cursor-pointer" title={icon.props.title}>

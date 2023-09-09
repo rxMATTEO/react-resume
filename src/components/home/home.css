@@ -69,8 +69,6 @@ h1 {
 .home {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .home h1 {
   color: white;

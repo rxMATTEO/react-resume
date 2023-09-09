@@ -1,0 +1,15 @@
+.soc-links {
+  color: #998ADB;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.soc-links .link {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=social-links.css.map */

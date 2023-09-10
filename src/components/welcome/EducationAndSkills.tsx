@@ -11,7 +11,7 @@ function EducationAndSkills() {
         <div className="lg:w-1/2 skills relative right-0">
           <p className=" text-lightgrey">
             Во время учебы занимал призовые места в чемпионатах
-            <a href="https://worldskills.ru/" target="_blank" rel="noreferrer" className="text-purple"> WorldSkills </a>
+            <a href="/static/img/3L9vtLdAxXQ.jpg" target="_blank" rel="noreferrer" className="text-purple"> WorldSkills </a>
             по специализации - разработка настольных приложений для бизнеса.
           </p>
           <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>

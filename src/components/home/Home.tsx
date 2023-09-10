@@ -8,10 +8,14 @@ function Home() {
         <h6 className="label">Привет, меня зовут</h6>
         <h1 className="label">Артем Володин</h1>
         <h6 className="label">Я fullstack разработчик на TypeScript и JavaScript</h6>
-        <Button text="Скачать резюме .pdf" />
+        <a href="/resumeraw.pdf" target="_blank">
+          <Button
+            text="Скачать резюме .pdf"
+          />
+        </a>
       </div>
       <div>
-        <img src="/static/img/js.png" />
+        <img src="/static/img/js.png" alt="js" />
       </div>
     </div>
   );

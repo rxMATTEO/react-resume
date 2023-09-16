@@ -33,9 +33,9 @@ function EducationAndSkills() {
               </span>
             </div>
             <div className="flex flex-row items-center">
-              <span className="text-[50px] font-bold mr-2">{'>3'}</span>
+              <span className="text-[50px] font-bold mr-2">3</span>
               <span>
-                лет
+                года
                 <br />
                 коммерческого
                 опыта

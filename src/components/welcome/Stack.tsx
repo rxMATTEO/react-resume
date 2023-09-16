@@ -9,7 +9,7 @@ function Stack() {
         <CardWithImage header="Vue / Nuxt" label="" mainText="Nuxt 3 (SSR, SSG)/n Vue 3 (TSX / JSX, рендер-функции, шаблоны, SPA, Composition / Options API)/nVue router/n Vue test/n Pinia/n PrimeVue" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/vuejs/vuejs-original.svg" />
         <CardWithImage header="React" label="" mainText="Redux (старый и toolkit)/n React Query/n Router/n PrimeReact" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg" />
         <CardWithImage header="HTML/CSS" label="" mainText="Адаптивная верстка в т.ч. по макетам Figma/n БЭМ/n Flex, Grid, Mobile first/n SASS, Tailwind CSS, PrimeFlex, Vanilla CSS 3/nEmmet" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/sass/sass-original.svg" />
-        <CardWithImage header="Node.JS" label="" mainText="Express/n Sequelize/n Prisma/n Nitro/n Rest API" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-plain.svg" />
+        <CardWithImage header="Node.JS" label="" mainText="Express/n Sequelize/n Prisma/n Nitro/n Rest API/nAxios" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-plain.svg" />
         <CardWithImage header="Сборщики" label="" mainText="Vite/n Webpack" middleLabel="" imgPath="https://camo.githubusercontent.com/a845cf08bc585efdc903b5b4734cbc0623967d16216446d8c9c2fa299edfde34/68747470733a2f2f766974656a732e72752f6c6f676f2e737667" />
         <CardWithImage header="Контроль версий / задач" label="" mainText="Git/n Gitlab/n Github" middleLabel="" imgPath="https://github.com/devicons/devicon/raw/master/icons/gitlab/gitlab-original.svg" />
         <CardWithImage

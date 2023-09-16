@@ -2,13 +2,14 @@ import { useState } from 'react';
 import '../inputs/masonry.sass';
 import { IoLogoReact, IoLogoVue } from 'react-icons/io5';
 import { SiCsharp } from 'react-icons/si';
+import { BiLogoTypescript } from 'react-icons/bi';
 import InlineSelector from '../inputs/InlineSelector.tsx';
 import IsotopeLayout from '../inputs/IsotopeLayout.tsx';
 import CardScaleImage, { CardScaleImageProps } from '../inputs/CardScaleImageProps.tsx';
 
 function Portfolio() {
   const filters = {
-    '*': 'Все', vue: 'Vue', react: 'React', csharp: 'C#',
+    '*': 'Все', vue: 'Vue', react: 'React', ts: 'TypeScript', csharp: 'C#',
   };
   type Filter = keyof typeof filters;
   const [filterKey, setFilterKey] = useState('*' as Filter);
@@ -87,6 +88,33 @@ function Portfolio() {
       ),
       description: `Помощник учета товаров на предприятии. 
       Включает множество групп товаров, умеет печатать информацию об продукте и учитывать срок их хранения.`,
+    },
+    {
+      filter: 'ts',
+      title: 'TypeScript, Vanilla JS',
+      imageSrc: 'static/img/codewars.png',
+      href: 'https://github.com/rxMATTEO/Codewars-Solutions',
+      header: 'Codewars solutions',
+      logo: (
+        <div className="text-blue-400">
+          <BiLogoTypescript />
+        </div>
+      ),
+      description: `Мои решения интересных алгоритмических испытаний на Codewars на TypeScript и JavaScript.
+      Помогает улучшить навыки разработки и подходы к написанию кода.`,
+    },
+    {
+      filter: 'ts',
+      title: 'TypeScript',
+      imageSrc: 'static/img/typech.png',
+      href: 'https://github.com/rxMATTEO/Typescript-Challenges',
+      header: 'Typescript challenges solutions',
+      logo: (
+        <div className="text-blue-400">
+          <BiLogoTypescript />
+        </div>
+      ),
+      description: 'Я считаю, что TypeScript больше, чем надстройка для JS, добавляющая типы, и я был обязан поделиться решением задач по TS, которые подготовил один из мейнтейнеров Nuxt, Vue и так далее',
     },
     {
       filter: 'react',

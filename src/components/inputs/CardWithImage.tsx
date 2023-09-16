@@ -9,6 +9,10 @@ type propsTypes = {
   hoverable?: boolean,
 }
 
+function isString(prop: string | ReactElement): prop is string {
+  return Object.getPrototypeOf(prop) === String.prototype;
+}
+
 function CardWithImage(props: propsTypes) {
   const {
     header, label, middleLabel, mainText, imgPath, hoverable,
@@ -23,7 +27,13 @@ function CardWithImage(props: propsTypes) {
         <h1 className="text-white">{header}</h1>
         <p className="lg:absolute right-10 top-5 bg-purple text-sm p-1 inline-block" style={{ visibility: label ? 'visible' : 'hidden' }}>{label}</p>
         <p className="text-sm my-2">{middleLabel}</p>
-        <p className={`${label ? 'lg:w-2/3' : 'w-full'}`}>{mainText}</p>
+        <p className={`${label ? 'lg:w-2/3' : 'w-full'}`}>
+          {
+            isString(mainText) ? mainText?.split('/n').map((i) => (
+              <p>{i}</p>
+            )) : mainText
+        }
+        </p>
       </div>
     </div>
   );

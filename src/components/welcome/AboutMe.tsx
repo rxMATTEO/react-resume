@@ -19,10 +19,14 @@ function AboutMe() {
             <span className="text-blue-300 font-bold">React</span>
             , в последнее время чаще использую
             {' '}
-            <span className="text-green-400 font-bold">Vue</span>
-            .
+            <span className="text-green-300 font-bold">Vue</span>
+            . Очень нравится писать производительные, расширяемые и красивые приложения, используя
+            {' '}
+            <span className="text-green-500 font-bold">Nuxt</span>
+            {' '}
+            с SSR, продумывать оптимизацию, оформление кода и его организацию.
             <br />
-            <p>
+            <p className="mt-3">
               Люблю использовать Utility-First CSS библиотеки (Tailwind, PrimeFlex), но также владею и не против написания своих стилей на
               <span className="font-bold text-pink-300"> SASS</span>
               .
@@ -34,7 +38,7 @@ function AboutMe() {
           В свободное время пишу
           <strong className=""> open source </strong>
           Fullstack веб приложения.
-          Одно из последних и очень крупная - интерактивная игра по нахождению синонимов для слов, на разных языках -
+          Одно из последних и крупных - интерактивная игра по нахождению синонимов для слов, на разных языках -
           <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
         </p>
         <p>

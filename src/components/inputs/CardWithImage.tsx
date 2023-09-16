@@ -4,7 +4,7 @@ type propsTypes = {
   header: string,
   label: string,
   mainText: string | ReactElement,
-  middleLabel: string,
+  middleLabel: string | ReactElement,
   imgPath: string,
   hoverable?: boolean,
 }

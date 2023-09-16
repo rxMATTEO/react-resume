@@ -6,6 +6,11 @@ function EducationAndSkills() {
       <p className="text-5xl font-light uppercase tracking-[5px] mb-10" id="skills">Образование и навыки</p>
       <div className="flex flex-col lg:flex-row mx-auto place-content-between">
         <div className="education lg:w-1/3">
+          <CardWithLabel
+            header="Разработка, сопровождение и обеспечение безопасности информационных систем"
+            label="2023-2028"
+            mainText="Высшее образование"
+          />
           <CardWithLabel header="Cпециалист по информационным системам и программированию" label="2017-2021" mainText="Среднее профессиональное образование" />
         </div>
         <div className="lg:w-1/2 skills relative right-0">
@@ -15,8 +20,9 @@ function EducationAndSkills() {
             по специализации - разработка настольных приложений для бизнеса.
           </p>
           <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>
-          <p>Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие.</p>
+          <p className="mt-3">Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие.</p>
           <p>Также проектировал и создавал базы данных, используя Microsoft SQL.</p>
+          <p className="mt-3">Поступил в университет "Синергия". Обучаюсь на очной форме образования</p>
           <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-row items-center mr-5">
               <span className="text-[50px] mr-2 font-bold">{'>10'}</span>

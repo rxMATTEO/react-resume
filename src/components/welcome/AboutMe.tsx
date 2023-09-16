@@ -14,7 +14,7 @@ function AboutMe() {
           . Над разработкой программного обеспечения и веб приложений работаю 4 года.
           <p>
             <br />
-            Начинал разрабатывать приложения для десктопа на .NET, впоследствии перешел на fullstack разработку на JavaScript. Первым frontend фреймворком был
+            Начинал разрабатывать приложения для десктопа на .NET (С#), впоследствии перешел на fullstack разработку на JavaScript. Первым frontend фреймворком был
             {' '}
             <span className="text-blue-300 font-bold">React</span>
             , в последнее время чаще использую
@@ -23,11 +23,7 @@ function AboutMe() {
             .
             <br />
             <p>
-              Люблю использовать
-              {' '}
-              <span className="font-bold text-blue-200">Utility-First CSS</span>
-              {' '}
-              и
+              Люблю использовать Utility-First CSS библиотеки (Tailwind, PrimeFlex), но также владею и не против написания своих стилей на
               <span className="font-bold text-pink-300"> SASS</span>
               .
             </p>
@@ -37,17 +33,20 @@ function AboutMe() {
         <p className="mt-5">
           В свободное время пишу
           <strong className=""> open source </strong>
-          fullstack веб приложения.
-          Одно из последних - интерактивная игра по нахождению синонимов для слов, на разных языках -
+          Fullstack веб приложения.
+          Одно из последних и очень крупная - интерактивная игра по нахождению синонимов для слов, на разных языках -
           <a href="https://www.synohunt.ru" target="_blank" className="text-purple" rel="noreferrer"> Synohunt. </a>
         </p>
         <p>
-          Часто прохожу испытания на
-          <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars.</a>
+          С 2021 года, часто прохожу испытания на
+          <a href="https://www.codewars.com/users/rxMATTE0" target="_blank" className="text-purple" rel="noreferrer"> Codewars. </a>
+          Имею
+          <span className="text-blue-500"> 4 kyu </span>
+          (почти 3). Вхожу в топ 7% по очкам среди всех пользователей.
         </p>
         <br />
-        <p>Заблокировали основной Github из-за места работы, в связи с чем утеряна куча репозиториев, из них малая часть мигрировала на новый.</p>
-
+        <p>Заблокировали основной Github из-за места работы (входит в санкционный список США), в связи с чем утеряна куча репозиториев, из них малая часть мигрировала на новый аккаунт.</p>
+        <p className="mt-3">Свободно говорю на Анлгийском языке.</p>
       </div>
     </div>
   );

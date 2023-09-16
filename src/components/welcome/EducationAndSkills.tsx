@@ -22,7 +22,7 @@ function EducationAndSkills() {
           <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>
           <p className="mt-3">Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие.</p>
           <p>Также проектировал и создавал базы данных, используя Microsoft SQL.</p>
-          <p className="mt-3">Поступил в университет "Синергия". Обучаюсь на очной форме образования</p>
+          <p className="mt-3">Поступил в университет "Синергия". Обучаюсь на очной форме образования.</p>
           <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-row items-center mr-5">
               <span className="text-[50px] mr-2 font-bold">{'>10'}</span>

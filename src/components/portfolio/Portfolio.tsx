@@ -62,6 +62,33 @@ function Portfolio() {
       Имеет систему категорий, отзывов, поиска, рейтингов и покупки товаров.`,
     },
     {
+      filter: 'ts',
+      title: 'TypeScript, Vanilla JS',
+      imageSrc: 'static/img/codewars.png',
+      href: 'https://github.com/rxMATTEO/Codewars-Solutions',
+      header: 'Codewars solutions',
+      logo: (
+        <div className="text-blue-400">
+          <BiLogoTypescript />
+        </div>
+      ),
+      description: `Мои решения интересных алгоритмических испытаний на Codewars на TypeScript и JavaScript.
+      Помогает улучшить навыки разработки и подходы к написанию кода.`,
+    },
+    {
+      filter: 'ts',
+      title: 'TypeScript',
+      imageSrc: 'static/img/typech.png',
+      href: 'https://github.com/rxMATTEO/Typescript-Challenges',
+      header: 'Typescript challenges solutions',
+      logo: (
+        <div className="text-blue-400">
+          <BiLogoTypescript />
+        </div>
+      ),
+      description: 'Я считаю, что TypeScript больше, чем надстройка для JS, добавляющая типы, и я был обязан поделиться решением задач по TS, которые подготовил один из мейнтейнеров Nuxt, Vue и так далее',
+    },
+    {
       filter: 'csharp',
       title: 'C#, MSSQL, WPF, Entity Framework',
       imageSrc: 'static/img/oem.png',
@@ -88,33 +115,6 @@ function Portfolio() {
       ),
       description: `Помощник учета товаров на предприятии. 
       Включает множество групп товаров, умеет печатать информацию об продукте и учитывать срок их хранения.`,
-    },
-    {
-      filter: 'ts',
-      title: 'TypeScript, Vanilla JS',
-      imageSrc: 'static/img/codewars.png',
-      href: 'https://github.com/rxMATTEO/Codewars-Solutions',
-      header: 'Codewars solutions',
-      logo: (
-        <div className="text-blue-400">
-          <BiLogoTypescript />
-        </div>
-      ),
-      description: `Мои решения интересных алгоритмических испытаний на Codewars на TypeScript и JavaScript.
-      Помогает улучшить навыки разработки и подходы к написанию кода.`,
-    },
-    {
-      filter: 'ts',
-      title: 'TypeScript',
-      imageSrc: 'static/img/typech.png',
-      href: 'https://github.com/rxMATTEO/Typescript-Challenges',
-      header: 'Typescript challenges solutions',
-      logo: (
-        <div className="text-blue-400">
-          <BiLogoTypescript />
-        </div>
-      ),
-      description: 'Я считаю, что TypeScript больше, чем надстройка для JS, добавляющая типы, и я был обязан поделиться решением задач по TS, которые подготовил один из мейнтейнеров Nuxt, Vue и так далее',
     },
     {
       filter: 'react',

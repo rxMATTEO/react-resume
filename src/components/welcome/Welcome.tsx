@@ -10,6 +10,13 @@ import ContactMe from '../contactme/ContactMe.tsx';
 
 function Welcome() {
   const carouselItems = [
+    <div title="Github" className="pr-5 inline-block">
+      <div className="inline-block" style={{ width: '300px', height: '300px' }}>
+        <a target="_blank" href="https://github.com/rxMATTEO" rel="noreferrer">
+          <img alt="Github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" className=" block w-full h-full" />
+        </a>
+      </div>
+    </div>,
     <div className="pr-5 inline-block">
       <div title="Codewars" className="inline-block" style={{ width: '300px', height: '300px' }}>
         <a target="_blank" href="https://www.codewars.com/users/rxMATTE0" rel="noreferrer">
@@ -21,13 +28,6 @@ function Welcome() {
       <div className="inline-block" style={{ width: '300px', height: '300px' }}>
         <a target="_blank" href="https://edabit.com/user/rFTvjXGGawjFDKqNK" rel="noreferrer">
           <img alt="Edabit" src="https://s3.amazonaws.com/edabit-images/monster003.png" className="block w-full h-full" />
-        </a>
-      </div>
-    </div>,
-    <div title="Github" className="pr-5 inline-block">
-      <div className="inline-block" style={{ width: '300px', height: '300px' }}>
-        <a target="_blank" href="https://github.com/rxMATTEO" rel="noreferrer">
-          <img alt="Github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" className=" block w-full h-full" />
         </a>
       </div>
     </div>,

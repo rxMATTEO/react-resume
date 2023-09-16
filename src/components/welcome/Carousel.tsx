@@ -36,11 +36,11 @@ function Carousel(props: propTypes) {
     <div className="overflow-hidden">
       <div className="overflow-hidden mx-auto relative" style={{ width: `${offsetPerStep}px` }}>
         <div className="inline-block relative transition-all ease-in-out duration-500" style={{ width: `${items.length * offsetPerStep}px`, left: -offset }}>
-          {items}
+          {items.map((i, index) => <span key={index.toString()}>{i}</span>)}
         </div>
       </div>
       <div className="mx-auto flex flex-row place-content-center mt-5">
-        {bullets}
+        {bullets.map((i) => <div key={i.props.index}>{i}</div>)}
       </div>
     </div>
   );

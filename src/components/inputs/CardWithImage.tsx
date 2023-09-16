@@ -30,7 +30,7 @@ function CardWithImage(props: propsTypes) {
         <p className={`${label ? 'lg:w-2/3' : 'w-full'}`}>
           {
             isString(mainText) ? mainText?.split('/n').map((i) => (
-              <p>{i}</p>
+              <p key={i}>{i}</p>
             )) : mainText
         }
         </p>

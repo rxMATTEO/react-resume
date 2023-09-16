@@ -38,7 +38,7 @@ function SocialLinks() {
     <div className="soc-links flex xl:flex-row items-center lg:flex-col">
       {
         icons.map((icon) => (
-          <div className="flex-1 cursor-pointer" title={icon.props.title}>
+          <div key={icon.props.title} className="flex-1 cursor-pointer" title={icon.props.title}>
             <IconContext.Provider value={size.current}>
               {icon}
             </IconContext.Provider>

@@ -14,10 +14,10 @@ function EducationAndSkills() {
           <CardWithLabel header="Cпециалист по информационным системам и программированию" label="2017-2021" mainText="Среднее профессиональное образование" />
         </div>
         <div className="lg:w-1/2 skills relative right-0">
-          <p className=" text-lightgrey">
+          <p className=" text-lightgrey max-md:mt-3">
             Во время учебы занимал призовые места в чемпионатах
             <a href="/static/img/3L9vtLdAxXQ.jpg" target="_blank" rel="noreferrer" className="text-purple"> WorldSkills </a>
-            по специализации - разработка настольных приложений для бизнеса.
+            по специализации - программные решения для бизнеса.
           </p>
           <p>Учился проектировать, внедрять и сопровождать информационные системы.</p>
           <p className="mt-3">Разрабатывал различные модели для собственных приложений. Из них: UML, IDEF-0, ER, Use-case и многие другие.</p>

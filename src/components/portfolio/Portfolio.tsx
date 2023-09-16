@@ -137,7 +137,7 @@ function Portfolio() {
       <InlineSelector containerClassName="filters">
         {
             Object.entries(filters).map(([key, value]) => (
-              <button type="button" className="filter mr-5" onClick={() => onFilterKeyChange(key as Filter)}>{value}</button>
+              <button key={key} type="button" className="filter mr-5" onClick={() => onFilterKeyChange(key as Filter)}>{value}</button>
             ))
         }
       </InlineSelector>
@@ -148,7 +148,7 @@ function Portfolio() {
             {
               // it's spreading only props of a child element
               // eslint-disable-next-line react/jsx-props-no-spreading
-              projects.map((project) => (<CardScaleImage {...project} />))
+              projects.map((project) => (<CardScaleImage {...project} key={project.title} />))
             }
           </div>
         )}

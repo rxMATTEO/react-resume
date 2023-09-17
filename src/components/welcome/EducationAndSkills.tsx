@@ -25,7 +25,7 @@ function EducationAndSkills() {
           <p className="mt-3">Поступил в университет "Синергия". Обучаюсь на очной форме образования.</p>
           <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-row items-center mr-5">
-              <span className="text-[50px] mr-2 font-bold">{'>10'}</span>
+              <span className="text-[50px] mr-2 font-bold">{'>5'}</span>
               <span>
                 PET
                 <br />

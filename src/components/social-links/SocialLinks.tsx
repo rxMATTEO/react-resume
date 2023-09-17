@@ -14,7 +14,7 @@ function SocialLinks() {
 
   const icons: Readonly<ReactElement<{ title: string }>[]> = [
     <div title="HH">
-      <a href="https://hh.ru/here-link" target="_blank" rel="noreferrer">
+      <a href="https://hh.ru/resume/89e9252cff0ba16ad20039ed1f397a364b4b62" target="_blank" rel="noreferrer">
         <HhLogo color="bg-purple" textColor="text-black" />
       </a>
     </div>,

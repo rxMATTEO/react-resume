@@ -14,7 +14,7 @@ function ContactMe() {
         <a target="_blank" href="https://t.me/rxmatteo" rel="noreferrer">
           <Button icon={<FaTelegram />} text="Telegram" color="!bg-blue-400 hover:!text-white" />
         </a>
-        <a target="_blank" href="https://hh.ru/here-link-to-resume" rel="noreferrer">
+        <a target="_blank" href="https://hh.ru/resume/89e9252cff0ba16ad20039ed1f397a364b4b62" rel="noreferrer">
           <Button icon={<HhLogo color="bg-white text-red-500" />} text="HeadHunter" color="!bg-red-500 hover:!text-white" />
         </a>
       </div>

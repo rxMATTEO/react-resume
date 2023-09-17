@@ -7,7 +7,7 @@ function Home() {
       <div>
         <h6 className="label">Привет, меня зовут</h6>
         <h1 className="label">Артем Володин</h1>
-        <h6 className="label">Я fullstack разработчик на TypeScript и JavaScript</h6>
+        <h6 className="label">Я middle fullstack разработчик на TypeScript и JavaScript</h6>
         <a href="/resumeraw.pdf" target="_blank">
           <Button
             text="Скачать резюме .pdf"
